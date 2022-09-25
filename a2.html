@@ -5,11 +5,63 @@
     <title>hören</title> 
     <link rel="stylesheet" href="horencss.css">
     <script src="horenjs.js"> </script> 
+    <style>
+        body{
+            background-color: rgba(47, 212, 47, 0.527);
+        }
+        nav{
+        width: 100%;
+    
+    background-color: rgb(182, 245, 250);
+    top: 0px;
+        right: 0px;
+        left: 0px;
+   
+    }
+    nav ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+ }
+ nav li{
+    list-style-type: none;
+    float: left;
+ }
 
+ nav a{
+    display:inline-block;
+    text-decoration: none;
+    padding: 20px 50px;
+    color: black;
+font-size:x-large;
+font-weight: bold;
+}
+    .ac:hover{
+    
+    border-top: 5px solid yellow;
+    background-color: rgb(255, 255, 68); }
+.bc:hover{
+    border-top: 5px solid green;
+    background-color: rgb(47, 212, 47); 
+}
+.cc:hover{
+    border-top: 5px solid blue;
+    background-color: rgb(0, 140, 255);  
+}
+.dc:hover{
+    border-top: 5px solid red;
+    background-color: rgb(248, 71, 71);
+}
+    </style>
   </head>
      <body>
-
-        <h1>ä ö ü Ä Ö Ü ß</h1>
+        <nav>
+            <ul class="list">
+                <li class="ac"><a class="a" href="horen.html" >leicht</a></li> <li class="bc"><a class="b" href="a2.html" >mittel</a></li> 
+                <li class="cc"><a class="c" href="b1.html" >schwer</a></li> <li class="dc"><a class="d" href="b2.html" >knallhart</a></li>
+                </ul>
+            </nav>
+            <center><h1>ä ö ü Ä Ö Ü ß</h1></center>
         <div id="question">
             <h2 id="tit">Übung 1:</h2>
             <audio src="a2u1.mp3" controls></audio>

@@ -5,27 +5,79 @@
     <title>hören</title> 
     <link rel="stylesheet" href="horencss.css">
     <script src="horenjs.js"> </script> 
+<style>
+    body{
+        background-color: rgba(250, 250, 128, 0.616);
+    }
+    nav{
+        width: 100%;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+    background-color: rgb(182, 245, 250);
+    
+   
+    }
+    nav ul{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+ }
+ nav li{
+    list-style-type: none;
+    float: left;
+ }
 
+ nav a{
+    display:inline-block;
+    text-decoration: none;
+    padding: 20px 50px;
+    color: black;
+font-size:x-large;
+font-weight: bold;
+}
+    .ac:hover{
+    
+    border-top: 5px solid yellow;
+    background-color: rgb(255, 255, 68); }
+.bc:hover{
+    border-top: 5px solid green;
+    background-color: rgb(47, 212, 47); 
+}
+.cc:hover{
+    border-top: 5px solid blue;
+    background-color: rgb(0, 140, 255);  
+}
+.dc:hover{
+    border-top: 5px solid red;
+    background-color: rgb(248, 71, 71);
+}
+
+</style>
   </head>
      <body>
-
-        <h1>ä ö ü Ä Ö Ü ß</h1>
+        <nav>
+        <ul class="list">
+            <li class="ac"><a class="a" href="horen.html" >leicht</a></li> <li class="bc"><a class="b" href="a2.html" >mittel</a></li> 
+            <li class="cc"><a class="c" href="b1.html" >schwer</a></li> <li class="dc"><a class="d" href="b2.html" >knallhart</a></li>
+            </ul>
+        </nav>
+        <center><h1>ä ö ü Ä Ö Ü ß</h1></center>
         <div id="question">
             <h2 id="tit">Übung 1:</h2>
             <audio src="a1u1.mp3" controls></audio>
     <h3>+Kommst du jetzt? <br>
         -Ja, ich komme. <br>
-        <br>
+        
         +Wo wohnst du? <br>
-        -Ich wohne in <input id="mot1" class="inp" type"text"><div id="r1" class="r"></div><div id="f1" class="f"></div> <br>
-        <br>
+        -Ich wohne in <input id="mot1" class="inp" type"text"><div id="r1" class="r"></div><div id="f1" class="f"></div> 
         +Wo wohnt ihr? <br>
-        -Wir wohnen in <input id="mot2" class="inp" type"text"><div id="r2" class="r"></div><div id="f2" class="f"></div> <br>
-        <br>
+        -Wir wohnen in <input id="mot2" class="inp" type"text"><div id="r2" class="r"></div><div id="f2" class="f"></div> 
+        
         +Wo wohnt er? <br>
-        -Pedro? Er wohnt in <input id="mot3" class="inp" type"text"><div id="r3" class="r"></div><div id="f3" class="f"></div> <br>
+        -Pedro? Er wohnt in <input id="mot3" class="inp" type"text"><div id="r3" class="r"></div><div id="f3" class="f"></div> 
         +Frau Bergmann, wo wohnen Sie? <br>
-        -Ich wohne in <input id="mot4" class="inp" type"text"><div id="r4" class="r"></div><div id="f4" class="f"></div> <br>
+        -Ich wohne in <input id="mot4" class="inp" type"text"><div id="r4" class="r"></div><div id="f4" class="f"></div> 
     </h3>
 <div id="bc">
 <button type="submit" id="btn" onclick="corr()">korrigieren</button>
@@ -38,18 +90,18 @@
     <h2 id="tit">Übung 2:</h2>
     <audio src="a1u2.mp3" controls></audio>
 <h3>1. +Julian, wie ist deine Telefonnummer? <br>
--Meine Telefonnumer ist <input id="u2mot1" class="inp" type"text"><div id="u2r1" class="r"></div><div id="u2f1" class="f"></div> <br>
-<br>
+-Meine Telefonnumer ist <input id="u2mot1" class="inp" type"text"><div id="u2r1" class="r"></div><div id="u2f1" class="f"></div> 
+
 2. +Wie ist die Telefonnummer von Michaela? <br>
--Die Telefonnummer von Michaela? Das ist die <input id="u2mot2" class="inp" type"text"><div id="u2r2" class="r"></div><div id="u2f2" class="f"></div> <br>
-<br>
+-Die Telefonnummer von Michaela? Das ist die <input id="u2mot2" class="inp" type"text"><div id="u2r2" class="r"></div><div id="u2f2" class="f"></div> 
+
 3. +Sabine, hast du ein Handy <br>
 -Ja
 <br>
 +Und wie ist deine Nummer? <br>
-- <input id="u2mot3" class="inp" type"text"><div id="u2r3" class="r"></div><div id="u2f3" class="f"></div> <br>
+- <input id="u2mot3" class="inp" type"text"><div id="u2r3" class="r"></div><div id="u2f3" class="f"></div> 
 4. +Wie ist die Handynummer von Jarek? <br>
--Moment ... das ist die <input id="u2mot4" class="inp" type"text"><div id="u2r4" class="r"></div><div id="u2f4" class="f"></div> <br>
+-Moment ... das ist die <input id="u2mot4" class="inp" type"text"><div id="u2r4" class="r"></div><div id="u2f4" class="f"></div> 
 </h3>
 <div id="bc">
 <button type="submit" id="btn" onclick="corr2()">korrigieren</button>
@@ -60,11 +112,11 @@
 <div id="question">
     <h2 id="tit">Übung 3:</h2>
     <audio src="a1u3.mp3" controls></audio>
-<h3>-Können Sie das bitte <input id="u3mot1" class="inp" type"text">?<div id="u3r1" class="r"></div><div id="u3f1" class="f"></div> <br>
-<br>
--<input id="u3mot2" class="inp" type"text">,kannst du das bitte <input id="u3mot3" class="inp" type"text"> <div id="u3r2" class="r"></div><div id="u3f2" class="f"></div><div id="u3r3" class="r"></div><div id="u3f3" class="f"></div> <br> <br>
-<br>
--Kannst du das bitte <input id="u3mot4" class="inp" type"text"><div id="u3r4" class="r"></div><div id="u3f4" class="f"></div> <br>
+<h3>-Können Sie das bitte <input id="u3mot1" class="inp" type"text">?<div id="u3r1" class="r"></div><div id="u3f1" class="f"></div> 
+
+-<input id="u3mot2" class="inp" type"text">,kannst du das bitte <input id="u3mot3" class="inp" type"text"> <div id="u3r2" class="r"></div><div id="u3f2" class="f"></div><div id="u3r3" class="r"></div><div id="u3f3" class="f"></div> 
+
+-Kannst du das bitte <input id="u3mot4" class="inp" type"text"><div id="u3r4" class="r"></div><div id="u3f4" class="f"></div> 
 Wie heißt das auf Deutsch?
 <br>
 
@@ -78,15 +130,13 @@ Wie heißt das auf Deutsch?
 <div id="question">
     <h2 id="tit">Übung 4:</h2>
     <audio src="a1u4.mp3" controls></audio>
-<h3>+Hallo, wir sind Campus Radio. Wir <input id="u4mot1" class="inp" type"text">internationale Studenten. Wie heißt ihr? Woher kommt ihr?<div id="u4r1" class="r"></div><div id="u4f1" class="f"></div> <br>
-<br>
--Ciao, ich bin Laura. Ich komme aus Pisa und <input id="u4mot2" class="inp" type"text">in Bologna <div id="u4r2" class="r"></div><div id="u4f2" class="f"></div> <br>
-# Und ich bin Piet. Ich bin aus Brüssel.  <br>
-+ Welche <input id="u4mot3" class="inp" type"text">sprecht ihr? <div id="u4r3" class="r"></div><div id="u4f3" class="f"></div> <br>
-  
- - Ich spreche Italienisch - und oft Englisch und Deutsch im <input id="u4mot4" class="inp" type"text">, natürlich.<div id="u4r4" class="r"></div><div id="u4f4" class="f"></div> <br>
+<h3>+Hallo, wir sind Campus Radio. Wir <input id="u4mot1" class="inp" type"text">internationale Studenten. Wie heißt ihr? Woher kommt ihr?<div id="u4r1" class="r"></div><div id="u4f1" class="f"></div> 
 
-<br>
+-Ciao, ich bin Laura. Ich komme aus Pisa und <input id="u4mot2" class="inp" type"text">in Bologna <div id="u4r2" class="r"></div><div id="u4f2" class="f"></div> 
+# Und ich bin Piet. Ich bin aus Brüssel.  <br>
++ Welche <input id="u4mot3" class="inp" type"text">sprecht ihr? <div id="u4r3" class="r"></div><div id="u4f3" class="f"></div> 
+  
+ - Ich spreche Italienisch - und oft Englisch und Deutsch im <input id="u4mot4" class="inp" type"text">, natürlich.<div id="u4r4" class="r"></div><div id="u4f4" class="f"></div> 
 
 </h3>
 <div id="bc">
@@ -98,16 +148,16 @@ Wie heißt das auf Deutsch?
 <div id="question">
     <h2 id="tit">Übung 5:</h2>
     <audio src="a1u5.mp3" controls></audio>
-<h3>+ Guten Tag, Frau Wenke. Hier ist viellecht Ihre <input id="u5mot1" class="inp" type"text"><div id="u5r1" class="r"></div><div id="u5f1" class="f"></div> <br>
-<br>
+<h3>+ Guten Tag, Frau Wenke. Hier ist viellecht Ihre <input id="u5mot1" class="inp" type"text"><div id="u5r1" class="r"></div><div id="u5f1" class="f"></div> 
+
 - Hallo, Herr Meier, na ja, mal sehen. <br>
-+ Die Wohnung hat drei <input id="u5mot2" class="inp" type"text"> <div id="u5r2" class="r"></div><div id="u5f2" class="f"></div> <br>
++ Die Wohnung hat drei <input id="u5mot2" class="inp" type"text"> <div id="u5r2" class="r"></div><div id="u5f2" class="f"></div> 
 - Hat die Wohnung auch einen Garten?   <br>
 + Nein, sie hat keinen Garten. Aber es gibt einen Balkon. Hier! <br>
-- <input id="u5mot3" class="inp" type"text">, aber der Balkon ist sehr klein. Was kostet die Wohnung?  <div id="u5r3" class="r"></div><div id="u5f3" class="f"></div> <br>
-+ Sie kostet nur <input id="u5mot4" class="inp" type"text"> Euro. Das ist sehr billig.<div id="u5r4" class="r"></div><div id="u5f4" class="f"></div> <br>
+- <input id="u5mot3" class="inp" type"text">, aber der Balkon ist sehr klein. Was kostet die Wohnung?  <div id="u5r3" class="r"></div><div id="u5f3" class="f"></div> 
++ Sie kostet nur <input id="u5mot4" class="inp" type"text"> Euro. Das ist sehr billig.<div id="u5r4" class="r"></div><div id="u5f4" class="f"></div> 
 -Gut, dann nehme ich sie.
-<br>
+
 
 </h3>
 <div id="bc">
